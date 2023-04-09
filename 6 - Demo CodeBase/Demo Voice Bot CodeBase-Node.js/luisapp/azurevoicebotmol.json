@@ -1,0 +1,97 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "1.0",
+  "name": "voicebotabcbank",
+  "desc": "Build an Artificial Assistant Conversational Voice Bot",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "greetings"
+    },
+    {
+      "name": "Fund Transfer"
+    },
+    {
+      "name": "Block Card"
+    },
+    {
+      "name": "Update Address"
+    },
+    {
+      "name": "Connect To Call Centre"
+    }
+  ],
+  "entities": [
+    {
+      "name": "bankbot"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "transfer fund to other account",
+      "intent": "fundTransfer",
+      "entities": []
+    },
+    {
+      "text": "lost card, can you block my card",
+      "intent": "blockCard",
+      "entities": []
+    },
+    {
+      "text": "good evening good morning",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "hola",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "can you located nearest atm for me",
+      "intent": "findAtm",
+      "entities": []
+    },
+    {
+      "text": "howdy",
+      "intent": "greetings",
+      "entities": []
+    },
+    {
+      "text": "i'd like update my address",
+      "intent": "updateAddress",
+      "entities": [
+        {
+          "entity": "addressDetail",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "what is my monthly expense breakup?",
+      "intent": "expenseTracker",
+      "entities": []
+    },
+  ],
+  "settings": []
+}
